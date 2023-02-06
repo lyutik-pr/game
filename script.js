@@ -4,7 +4,10 @@ const isNumber = function (num){
     return !isNaN(parseFloat(num)) && isFinite(num);
 };
 
-function playGame(number) {
+function playGame() {
+    let number = Math.floor(Math.random() * 100) + 1;
+    console.log(number);
+    
     function compareNum() {
         const input = +prompt ("Угадай число от 1 до 100");
         console.log (number);
@@ -27,5 +30,4 @@ function playGame(number) {
     }
     compareNum();
 }
-playGame(34);
-
+playGame();
